@@ -77,7 +77,7 @@ import sys.FileSystem;
 
 		#else
 
-		data = '{"name":null,"assets":"aoy4:sizei733113y4:typey5:IMAGEy9:classNamey20:__ASSET__img_ant_pngy2:idy13:img%2Fant.pnggh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
+		data = '{"name":null,"assets":"aoy4:sizei9893y4:typey5:IMAGEy9:classNamey22:__ASSET__img_91825_pngy2:idy15:img%2F91825.pnggoR0i733113R1R2R3y28:__ASSET__img_ant_antwalk_pngR5y23:img%2Fant%2Fantwalk.pnggoR0i14312R1R2R3y33:__ASSET__img_fishbaddie_parts_pngR5y26:img%2Ffishbaddie_parts.pnggh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
 		manifest = AssetManifest.parse (data, rootPath);
 		library = AssetLibrary.fromManifest (manifest);
 		Assets.registerLibrary ("default", library);
@@ -105,13 +105,17 @@ null
 #if !display
 #if flash
 
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__img_ant_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__img_91825_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__img_ant_antwalk_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__img_fishbaddie_parts_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__manifest_default_json extends flash.utils.ByteArray { }
 
 
 #elseif (desktop || cpp)
 
-@:keep @:image("assets/img/ant.png") @:noCompletion #if display private #end class __ASSET__img_ant_png extends lime.graphics.Image {}
+@:keep @:image("assets/img/91825.png") @:noCompletion #if display private #end class __ASSET__img_91825_png extends lime.graphics.Image {}
+@:keep @:image("assets/img/ant/antwalk.png") @:noCompletion #if display private #end class __ASSET__img_ant_antwalk_png extends lime.graphics.Image {}
+@:keep @:image("assets/img/fishbaddie_parts.png") @:noCompletion #if display private #end class __ASSET__img_fishbaddie_parts_png extends lime.graphics.Image {}
 @:keep @:file("") @:noCompletion #if display private #end class __ASSET__manifest_default_json extends haxe.io.Bytes {}
 
 

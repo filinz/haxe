@@ -16,6 +16,8 @@ class Main extends Sprite
 		game = new Game();
 		addChild(game);
 		
+		// Assets:
+		// openfl.Assets.getBitmapData("img/assetname.jpg");
 	}
 
 }
