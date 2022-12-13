@@ -16,11 +16,11 @@ class ApplicationMain
 	#if !macro
 	public static function main()
 	{
-		lime.system.System.__registerEntryPoint("ants", create);
+		lime.system.System.__registerEntryPoint("timeinspector", create);
 
 		#if (js && html5)
 		#if (munit || utest)
-		lime.system.System.embed("ants", null, 800, 480);
+		lime.system.System.embed("timeinspector", null, 480, 800);
 		#end
 		#else
 		create(null);
@@ -37,9 +37,9 @@ class ApplicationMain
 
 		app.meta["build"] = "4";
 		app.meta["company"] = "filinz";
-		app.meta["file"] = "ants";
-		app.meta["name"] = "ants";
-		app.meta["packageName"] = "ants";
+		app.meta["file"] = "timeinspector";
+		app.meta["name"] = "timeinspector";
+		app.meta["packageName"] = "timeinspector";
 		app.meta["version"] = "1.0.0";
 
 		
@@ -54,21 +54,21 @@ class ApplicationMain
 			element: null,
 			frameRate: 60,
 			#if !web fullscreen: false, #end
-			height: 480,
+			height: 800,
 			hidden: #if munit true #else false #end,
 			maximized: false,
 			minimized: false,
 			parameters: {},
 			resizable: true,
-			title: "ants",
-			width: 800,
+			title: "timeinspector",
+			width: 480,
 			x: null,
 			y: null,
 		};
 
 		attributes.context = {
 			antialiasing: 0,
-			background: 17700,
+			background: 0,
 			colorDepth: 32,
 			depth: true,
 			hardware: true,
@@ -102,7 +102,7 @@ class ApplicationMain
 		app.createWindow(attributes);
 		
 		#elseif !air
-		app.window.context.attributes.background = 17700;
+		app.window.context.attributes.background = 0;
 		app.window.frameRate = 60;
 		#end
 
