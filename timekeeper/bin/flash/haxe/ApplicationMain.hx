@@ -35,7 +35,7 @@ class ApplicationMain
 		ManifestResources.init(config);
 		#end
 
-		app.meta["build"] = "4";
+		app.meta["build"] = "5";
 		app.meta["company"] = "filinz";
 		app.meta["file"] = "timekeeper";
 		app.meta["name"] = "timekeeper";
@@ -52,7 +52,7 @@ class ApplicationMain
 			borderless: false,
 			// display: 0,
 			element: null,
-			frameRate: 60,
+			frameRate: 5,
 			#if !web fullscreen: false, #end
 			height: 800,
 			hidden: #if munit true #else false #end,
@@ -68,7 +68,7 @@ class ApplicationMain
 
 		attributes.context = {
 			antialiasing: 0,
-			background: 0,
+			background: 13158,
 			colorDepth: 32,
 			depth: true,
 			hardware: true,
@@ -102,8 +102,8 @@ class ApplicationMain
 		app.createWindow(attributes);
 		
 		#elseif !air
-		app.window.context.attributes.background = 0;
-		app.window.frameRate = 60;
+		app.window.context.attributes.background = 13158;
+		app.window.frameRate = 5;
 		#end
 
 		var preloader = getPreloader();

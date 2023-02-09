@@ -77,7 +77,7 @@ import sys.FileSystem;
 
 		#else
 
-		data = '{"name":null,"assets":"aoy4:pathy15:img%2Fpilot.pngy4:sizei11842y4:typey5:IMAGEy2:idR1y7:preloadtgh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
+		data = '{"name":null,"assets":"aoy4:pathy15:img%2Fpilot.pngy4:sizei19254y4:typey5:IMAGEy2:idR1y7:preloadtgoR0y19:img%2Fpilotgray.pngR2i21825R3R4R5R7R6tgh","rootPath":null,"version":2,"libraryArgs":[],"libraryType":null}';
 		manifest = AssetManifest.parse (data, rootPath);
 		library = AssetLibrary.fromManifest (manifest);
 		Assets.registerLibrary ("default", library);
@@ -106,12 +106,14 @@ null
 #if flash
 
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__img_pilot_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__img_pilotgray_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__manifest_default_json extends null { }
 
 
 #elseif (desktop || cpp)
 
 @:keep @:image("assets/img/pilot.png") @:noCompletion #if display private #end class __ASSET__img_pilot_png extends lime.graphics.Image {}
+@:keep @:image("assets/img/pilotgray.png") @:noCompletion #if display private #end class __ASSET__img_pilotgray_png extends lime.graphics.Image {}
 @:keep @:file("") @:noCompletion #if display private #end class __ASSET__manifest_default_json extends haxe.io.Bytes {}
 
 

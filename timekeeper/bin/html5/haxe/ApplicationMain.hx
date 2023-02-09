@@ -35,7 +35,7 @@ class ApplicationMain
 		ManifestResources.init(config);
 		#end
 
-		app.meta["build"] = "4";
+		app.meta["build"] = "5";
 		app.meta["company"] = "filinz";
 		app.meta["file"] = "timekeeper";
 		app.meta["name"] = "timekeeper";
@@ -68,7 +68,7 @@ class ApplicationMain
 
 		attributes.context = {
 			antialiasing: 0,
-			background: 0,
+			background: 13158,
 			colorDepth: 32,
 			depth: true,
 			hardware: true,
@@ -102,7 +102,7 @@ class ApplicationMain
 		app.createWindow(attributes);
 		
 		#elseif !air
-		app.window.context.attributes.background = 0;
+		app.window.context.attributes.background = 13158;
 		app.window.frameRate = 60;
 		#end
 

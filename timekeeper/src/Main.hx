@@ -1,25 +1,35 @@
 package;
 
+//import openfl.Lib;
 import openfl.display.Sprite;
-import openfl.Lib;
 import openfl.Assets;
-import openfl.display.Bitmap;
+//import openfl.display.Bitmap;
+import openfl.events.Event;
 
-/**
- * ...
- * @author filinz
- */
 class Main extends Sprite 
 {
 
-	public function new() 
-	{
+	public var view:View;
+	
+	public function new() {	
 		super();
+				
+		view = new View();
+		addChild(view);
 		
-		trace("Okey");
+		//view.appScreen.visible = true;
 		
-		var bmp = new Bitmap(Assets.getBitmapData("img/pilot.png"));
-		addChild(bmp);
+		
+		
+		addEventListener(Event.ENTER_FRAME, enterFrame);
+		
 	}
 
+	
+	public function enterFrame(e:Event) {
+		
+		view.appScreen.checkClock();
+		
+	}
+	
 }

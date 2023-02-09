@@ -13,7 +13,6 @@
 -D no-compilation
 -D openfl-flash
 -D fdb
--D openfl-disable-handle-error
 -D web
 -cp bin/flash
 -swf-lib obj/assets.swf

@@ -25,12 +25,12 @@
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="openfl=9.2.0&#xA;lime=8.0.0&#xA;native-trace&#xA;tools=8.0.0&#xA;flash-use-stage&#xA;no-compilation&#xA;openfl-flash&#xA;fdb&#xA;openfl-disable-handle-error&#xA;web" />
+    <option directives="openfl=9.2.0&#xA;lime=8.0.0&#xA;native-trace&#xA;tools=8.0.0&#xA;flash-use-stage&#xA;no-compilation&#xA;openfl-flash&#xA;fdb&#xA;web" />
     <option flashStrict="False" />
     <option noInlineOnDebug="False" />
     <option mainClass="ApplicationMain" />
     <option enabledebug="True" />
-    <option additional="--macro openfl.utils._internal.ExtraParamsMacro.include()&#xA;--macro lime._internal.macros.DefineMacro.run()&#xA;-swf-lib obj/assets.swf&#xA;-swf-version 17&#xA;-debug " />
+    <option additional="--macro openfl.utils._internal.ExtraParamsMacro.include()&#xA;--macro lime._internal.macros.DefineMacro.run()&#xA;-swf-lib obj/assets.swf&#xA;-swf-version 17" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>
